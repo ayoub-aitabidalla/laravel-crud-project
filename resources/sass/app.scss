@@ -1,0 +1,126 @@
+//
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.table th, .table td {
+    vertical-align: middle;
+}
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+
+body {
+    background-color: #f7f9fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .btn {
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#product-list {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#productTable thead {
+    background-color: #007bff;
+    color: white;
+}
+
+#productTable tbody tr:hover {
+    background-color: #f1f5fa;
+    cursor: pointer;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #eef2f7;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Row Hover Effect */
+#productTable tbody tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Name Styling */
+.product-name {
+    font-weight: bold;
+    color: #343a40;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.product-name:hover {
+    color: #007bff;
+}
+
+/* Delete Button Hover Effect */
+.btn-outline-danger {
+    border: 1px solid #dc3545;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Category Name Styling */
+.text-primary {
+    font-weight: 500;
+}
+
+/* Table Cell Padding */
+td {
+    vertical-align: middle;
+    padding: 12px;
+}
